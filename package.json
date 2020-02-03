@@ -1,16 +1,17 @@
 {
-  "name": "angular-d3-graph-example",
+  "name": "angular8-d3-graph-example",
   "version": "0.0.1",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
+    "deploy": "ng build --prod --base-href /angular8-d3-graph-example/ && npx ngh --dir=dist/angular8-d3-graph-example --no-silent",
     "ng": "ng",
     "start": "ng serve",
     "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/core": "0.0.29",
+    "@angular-devkit/core": "^8.3.24",
     "@angular/common": "^5.0.1",
     "@angular/compiler": "^5.0.1",
     "@angular/core": "^5.0.1",
@@ -21,6 +22,7 @@
     "@angular/router": "^5.0.1",
     "core-js": "^2.4.1",
     "d3": "^4.11.0",
+    "gh-pages": "^2.2.0",
     "rxjs": "^5.5.2",
     "ts-helpers": "^1.1.2",
     "zone.js": "^0.8.14"
