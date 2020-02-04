@@ -6,11 +6,11 @@ import { D3Service, ForceDirectedGraph, Node } from '../../d3';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <svg #svg [attr.width]="_options.width" [attr.height]="_options.height">
-      <g [zoomableOf]="svg">
+	    <!--<g [zoomableOf]="svg">-->
         <g [linkVisual]="link" *ngFor="let link of links"></g>
         <g [nodeVisual]="node" *ngFor="let node of nodes"
             [draggableNode]="node" [draggableInGraph]="graph"></g>
-      </g>
+    <!--</g>-->
     </svg>
   `,
   styleUrls: ['./graph.component.css']
@@ -19,7 +19,8 @@ export class GraphComponent implements OnInit, AfterViewInit {
   @Input('nodes') nodes;
   @Input('links') links;
   graph: ForceDirectedGraph;
-  private _options: { width, height } = { width: 800, height: 600 };
+  //private _options: { width, height } = { width: 800, height: 600 };
+  _options: { width, height } = { width: 800, height: 600 };
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
