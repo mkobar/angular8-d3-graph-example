@@ -4,6 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
+    "build": "ng build --prod",
     "deploy": "ng build --prod --base-href /angular8-d3-graph-example/ && npx ngh --dir=dist/angular8-d3-graph-example --no-silent",
     "ng": "ng",
     "start": "ng serve",
