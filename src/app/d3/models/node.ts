@@ -17,6 +17,7 @@ export class Node implements d3.SimulationNodeDatum {
     this.id = id;
   }
 
+  // size for font and radius and color based on number of links
   normal = () => {
     return Math.sqrt(this.linkCount / APP_CONFIG.N);
   }
