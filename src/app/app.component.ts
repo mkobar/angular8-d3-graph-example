@@ -45,6 +45,13 @@ export class AppComponent {
       this.nodes.push(new Node(i));
     }
     this.nodes[getIndex(1)].linkCount=4;
+    //this.nodes[getIndex(1)].x = 20;
+    //this.nodes[getIndex(1)].y = 20;
+    this.nodes[getIndex(1)].fx = 200;
+    this.nodes[getIndex(1)].fy = 200;
+    this.nodes[getIndex(1)].fixed = true;
+    this.nodes[getIndex(1)].name = "cars";
+
     this.links.push(new Link(1, 2));
     this.links.push(new Link(1, 3));
     this.links.push(new Link(1, 4));
@@ -55,19 +62,23 @@ export class AppComponent {
     this.links.push(new Link(2, 7));
     this.links.push(new Link(2, 8));
     this.links.push(new Link(2, 9));
+    this.nodes[getIndex(2)].name = "old cars";
 
     this.nodes[getIndex(3)].linkCount=2;
     this.links.push(new Link(3, 10));
     this.links.push(new Link(3, 11));
+    this.nodes[getIndex(3)].name = "used cars";
 
     this.nodes[getIndex(4)].linkCount=2;
     this.links.push(new Link(4, 12));
     this.links.push(new Link(4, 13));
+    this.nodes[getIndex(4)].name = "new cars";
 
     this.nodes[getIndex(5)].linkCount=3;
     this.links.push(new Link(5, 14));
     this.links.push(new Link(5, 15));
     this.links.push(new Link(5, 16));
+    this.nodes[getIndex(5)].name = "cars for sale";
 
     this.nodes[getIndex(6)].linkCount=2;
     this.links.push(new Link(6, 17));
