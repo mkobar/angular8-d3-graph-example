@@ -25,6 +25,6 @@ export class NodeVisualComponent {
   @Input('nodeVisual') node: Node;
 
   pickNode() {
-    console.log("clicked on "+ node.id);
-
+    console.log("clicked on "+ this.node.id);
+  }
 }
