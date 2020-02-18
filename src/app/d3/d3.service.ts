@@ -41,8 +41,8 @@ export class D3Service {
 
       //d3.event.on('drag', dragged).on('end', ended);
       //d3.event.on('mousedown', pickNode);
-      //d3.event.on('click', pickNode);
-      d3.event.on('drag', pickNode);
+      d3.event.on('click', pickNode);
+      //d3.event.on('drag', pickNode);
 
       function pickNode() {
         console.log("clicked on "+node.id);
@@ -53,7 +53,7 @@ export class D3Service {
       }
 
       function dragged() {
-        node.fixed = true;
+        node.fixed = true; // no drag!
 	//node.fx = d3.event.x;
 	//node.fy = d3.event.y;
       }
@@ -71,7 +71,7 @@ export class D3Service {
     //d3element.call(d3.drag()
     //  .on('start', started));
     //d3element.call(d3.click().on('click', pickNode));
-    d3element.call(d3.event().on('click', pickNode));
+    d3element.call(d3.event().on('click', started));
   }
 
   /** The interactable graph we will simulate in this article
