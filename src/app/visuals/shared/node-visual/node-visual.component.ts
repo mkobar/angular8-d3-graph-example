@@ -15,7 +15,7 @@ import { Node } from '../../../d3';
       <svg:text
           class="node-name"
           [attr.font-size]="node.fontSize">
-        {{node.id}}
+        {{node.name}}
       </svg:text>
     </svg:g>
   `,
@@ -23,4 +23,8 @@ import { Node } from '../../../d3';
 })
 export class NodeVisualComponent {
   @Input('nodeVisual') node: Node;
+
+  pickNode() {
+    console.log("clicked on "+ node.id);
+
 }
