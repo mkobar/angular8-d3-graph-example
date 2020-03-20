@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 
 import { GraphComponent } from './visuals/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
+import { MapperComponent } from './components/mapper/mapper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GraphComponent,
     ...SHARED_VISUALS,
-    ...D3_DIRECTIVES
+    ...D3_DIRECTIVES,
+    MapperComponent
   ],
   imports: [
     BrowserModule,
