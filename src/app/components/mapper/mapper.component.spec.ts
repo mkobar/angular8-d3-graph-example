@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing' // eslint-disable-line no-unused-vars
 
-import { MapComponent } from './map.component'
+import { MapperComponent } from './mapper.component'
 
-describe('MapComponent', () => { // eslint-disable-line no-undef
-  let component: MapComponent
-  let fixture: ComponentFixture<MapComponent>
+describe('MapperComponent', () => { // eslint-disable-line no-undef
+  let component: MapperComponent
+  let fixture: ComponentFixture<MapperComponent>
 
   beforeEach(async(() => { // eslint-disable-line no-undef
     TestBed.configureTestingModule({
-      declarations: [MapComponent]
+      declarations: [MapperComponent]
     })
       .compileComponents()
   }))
 
   beforeEach(() => { // eslint-disable-line no-undef
-    fixture = TestBed.createComponent(MapComponent)
+    fixture = TestBed.createComponent(MapperComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })
