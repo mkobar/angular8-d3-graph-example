@@ -1,13 +1,13 @@
 .mapBox {
     /*border: none;*/
-    border: solid;
-    padding: 15px;
+    /*border: solid; */ // shows box that scrolls!
+    /* padding: 15px; */
     /*width: 600px;*/
     /*height: 360px;*/
     /*height: 1500px;*/
     /*height: auto;*/
     height: 100%;
-    margin-left: 26px;
+    /* margin-left: 26px; */
     /*overflow: scroll;*/
     /*overflow: auto;*/
     /*position: relative;*/
