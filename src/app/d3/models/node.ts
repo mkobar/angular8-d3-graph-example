@@ -14,6 +14,9 @@ export class Node implements d3.SimulationNodeDatum {
   name: string;
   id: string;
   linkCount: number = 0;
+  r: number = 20;
+  fontSize: string = '20px';
+
 
   constructor(id) {
     this.id = id;
@@ -24,13 +27,17 @@ export class Node implements d3.SimulationNodeDatum {
     return Math.sqrt(this.linkCount / APP_CONFIG.N);
   }
 
+  /***
   get r() {
-    return 50 * this.normal() + 10;
+  //return 50 * this.normal() + 10;
+    return 20;
   }
 
   get fontSize() {
-    return (30 * this.normal() + 10) + 'px';
+  //return (30 * this.normal() + 10) + 'px';
+    return '30px';
   }
+  ***/
 
   get color() {
     let index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal());
