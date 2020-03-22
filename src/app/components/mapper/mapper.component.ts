@@ -46,10 +46,14 @@ export class MapperComponent implements OnInit {
     this.nodes[getIndex(1)].linkCount=4;
     //this.nodes[getIndex(1)].x = 20;
     //this.nodes[getIndex(1)].y = 20;
-    this.nodes[getIndex(1)].fx = 200;
-    this.nodes[getIndex(1)].fy = 200;
+    //this.nodes[getIndex(1)].fx = 200;
+    //this.nodes[getIndex(1)].fy = 200;
+    this.nodes[getIndex(1)].fx = 45;
+    this.nodes[getIndex(1)].fy = 150/2;
+
     this.nodes[getIndex(1)].fixed = true;
     this.nodes[getIndex(1)].name = "cars";
+    this.nodes[getIndex(1)].r = 40;
 
     this.links.push(new Link(1, 2));
     this.links.push(new Link(1, 3));
