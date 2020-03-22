@@ -84,7 +84,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    color: #ebebeb;
+    /*color: #ebebeb;*/ // grey
+    color: black;
 }
 
 
@@ -181,9 +182,11 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 
 .Map2 {
-    boarder: 3px blue;
+    /* border: 3px blue;*/
+    border: solid;
     width: auto;
-    flex: none;
+    /* flex: none;*/
+    overflow: scroll;
 }
 
 .Query2 {
