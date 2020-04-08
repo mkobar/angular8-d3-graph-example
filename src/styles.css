@@ -185,8 +185,26 @@ WebKit inertia scrolling is being added here for any present/future devices that
     /* border: 3px blue;*/
     border: solid;
     width: auto;
+    /*position: relative;*/
+/*z-index: 999;*/
+/*margin: 1em 0;
+padding: 4px;*/
+min-width: 160px;
+background: #fcfaf0;
+    /* flex: none;*/
+    /*overflow: scroll;*/
+    overflow: hidden;
+    /*transition: .6s cubic-bezier(0, 1.25, .5, 1)*/
+}
+
+.Map2:hover,
+.Map2:focus {
+    /* border: 3px blue;*/
+	background: #e0d8b7;
     /* flex: none;*/
     overflow: scroll;
+    position: fixed;
+    transform: scale(1.35,1.35)
 }
 
 .Query2 {
