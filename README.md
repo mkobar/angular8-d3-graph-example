@@ -17,7 +17,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 [Static Tree with Names](https://mkobar.github.io/angular8-d3-graph-example1/) - drag removed
 
-Current [Map with ISesarch layout](https://mkobar.github.io/angular8-d3-graph-example/) - map with ISearch app layout
+[Map with ISesarch layout](https://mkobar.github.io/angular8-d3-graph-example2/) - map with ISearch app layout
 
+Current [Map with ISesarch layout](https://mkobar.github.io/angular8-d3-graph-example/) - map with ISearch app layout & popout
 
 More soon.
