@@ -14,6 +14,7 @@ import { Node } from '../../../d3';
       </svg:circle>
       <svg:text
           class="node-name"
+	  [attr.y]="node.tagy"
           [attr.font-size]="node.fontSize">
         {{node.name}}
       </svg:text>

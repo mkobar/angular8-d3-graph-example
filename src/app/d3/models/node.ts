@@ -1,7 +1,8 @@
 import APP_CONFIG from '../../app.config';
 
 export class Node implements d3.SimulationNodeDatum {
-  // optional - defining optional implementation properties - required for relevant typing assistance
+// optional - defining optional implementation properties
+// required for relevant typing assistance
   index?: number;
   x?: number;
   y?: number;
@@ -14,8 +15,9 @@ export class Node implements d3.SimulationNodeDatum {
   name: string;
   id: string;
   linkCount: number = 0;
-  r: number = 20;
+  r: number = 10;
   fontSize: string = '20px';
+  tagy: number;
 
 
   constructor(id) {
@@ -30,7 +32,7 @@ export class Node implements d3.SimulationNodeDatum {
   /***
   get r() {
   //return 50 * this.normal() + 10;
-    return 20;
+    return 10;
   }
 
   get fontSize() {
@@ -42,5 +44,10 @@ export class Node implements d3.SimulationNodeDatum {
   get color() {
     let index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal());
     return APP_CONFIG.SPECTRUM[index];
+  }
+
+  get tagy() {
+    const tagnumber = this.r;
+    return ((-tagnumber) -20);
   }
 }
