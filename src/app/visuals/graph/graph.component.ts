@@ -12,7 +12,9 @@ export class GraphComponent implements OnInit, AfterViewInit {
   @Input('links') links;
   graph: ForceDirectedGraph;
   //private _options: { width, height } = { width: 800, height: 600 };
-  _options: { width, height } = { width: 666, height: 150 };
+  //_options: { width, height } = { width: 666, height: 150 };
+  _options: { width, height } = { width: 400, height: 150 };
+  // why options for functions (with inner) and _options for html?
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
@@ -50,9 +52,12 @@ export class GraphComponent implements OnInit, AfterViewInit {
   }
 
   get options() {
-    return this._options = {
-      width: window.innerWidth,
-      height: window.innerHeight
+  return this._options = {
+    // why use inner?
+      //width: window.innerWidth,
+      //height: window.innerHeight
+      width: 700,
+      height: 250
     };
   }
 }
