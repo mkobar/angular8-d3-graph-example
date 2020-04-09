@@ -17,7 +17,7 @@ export class Node implements d3.SimulationNodeDatum {
   linkCount: number = 0;
   r: number = 10;
   fontSize: string = '20px';
-  tagy: number;
+  //tagy: number;
 
 
   constructor(id) {
