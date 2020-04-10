@@ -18,6 +18,7 @@ export class Node implements d3.SimulationNodeDatum {
   r: number = 10;
   fontSize: string = '20px';
   //tagy: number;
+  color: string = '#ccc';
 
 
   constructor(id) {
@@ -41,9 +42,12 @@ export class Node implements d3.SimulationNodeDatum {
   }
   ***/
 
-  get color() {
-    let index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal());
-    return APP_CONFIG.SPECTRUM[index];
+  get colorx() {
+    //let index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal());
+    //return APP_CONFIG.SPECTRUM[index];
+    //return 'purple';
+    //return '#6542a4';
+    return '#ccc';
   }
 
   get tagy() {
