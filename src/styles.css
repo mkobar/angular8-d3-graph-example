@@ -168,7 +168,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
 
 .Search {
     height: 60px;
-    width: 90%;
+    width: 98%;
     margin: 5px;
     flex: none;
 }
@@ -185,12 +185,13 @@ WebKit inertia scrolling is being added here for any present/future devices that
     /* border: 3px blue;*/
     border: solid;
     width: auto;
+    max-width: 90%;
     /*position: relative;*/
-/*z-index: 999;*/
-/*margin: 1em 0;
-padding: 4px;*/
-min-width: 160px;
-background: #fcfaf0;
+    z-index: 999;
+    /*margin: 1em 0;
+    padding: 4px;*/
+    min-width: 160px;
+    background: #fcfaf0;
     /* flex: none;*/
     /*overflow: scroll;*/
     overflow: hidden;
@@ -200,7 +201,8 @@ background: #fcfaf0;
 .Map2:hover,
 .Map2:focus {
     /* border: 3px blue;*/
-	background: #e0d8b7;
+    /*background: #e0d8b7;*/
+    background: #fcfaf0;
     /* flex: none;*/
     overflow: scroll;
     position: fixed;
