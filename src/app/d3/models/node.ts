@@ -19,6 +19,7 @@ export class Node implements d3.SimulationNodeDatum {
   fontSize: string = '20px';
   //tagy: number;
   color: string = '#ccc';
+  flagged: boolean = false;
 
 
   constructor(id) {
