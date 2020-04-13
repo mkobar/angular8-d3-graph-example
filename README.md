@@ -21,6 +21,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 [Map with ISesarch and popout](https://mkobar.github.io/angular8-d3-graph-example3/) - map with ISearch app layout & popout
 
-**Current ->** [Map with ISesarch popout](https://mkobar.github.io/angular8-d3-graph-example/) - map with ISearch app layout & popout
+[Map with ISesarch style](https://mkobar.github.io/angular8-d3-graph-example4/) - map with ISearch app layout, popout & styles
+
+**Current ->** [Map with ISesarch style](https://mkobar.github.io/angular8-d3-graph-example/) - map with ISearch layout, popout & styles
 
 More soon.
