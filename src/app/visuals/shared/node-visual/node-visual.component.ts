@@ -29,6 +29,7 @@ import { Node } from '../../../d3';
           [attr.font-size]="node.fontSize">
         {{node.name}}
       </svg:text>
+      <svg:image href="assets/images/flagged-24.png" x=-10 y=-10 [attr.height]="node.flagged" [attr.width]="node.flagged"/>
     </svg:g>
   `,
   styleUrls: ['./node-visual.component.css']
