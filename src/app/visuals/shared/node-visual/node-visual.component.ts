@@ -23,13 +23,25 @@ import { Node } from '../../../d3';
           [attr.r]="node.r">
       </svg:circle>
       <svg:text
-	      class="node-name"
-	      filter="url(#solid)"
+          class="node-name"
+          filter="url(#solid)"
 	  [attr.y]="node.tagy"
           [attr.font-size]="node.fontSize">
         {{node.name}}
       </svg:text>
-      <svg:image href="assets/images/flagged-24.png" x=-10 y=-10 [attr.height]="node.flagged" [attr.width]="node.flagged"/>
+      <svg:text
+          class="node-name"
+          fill="black"
+	  [attr.y]="node.tagy"
+          [attr.font-size]="node.fontSize">
+        {{node.name}}
+      </svg:text>
+      <svg:image
+          href="assets/images/flagged-24.png"
+          [attr.x]="node.flagged2"
+          [attr.y]="node.flagged2"
+          [attr.height]="node.flagged"
+          [attr.width]="node.flagged"/>
     </svg:g>
   `,
   styleUrls: ['./node-visual.component.css']

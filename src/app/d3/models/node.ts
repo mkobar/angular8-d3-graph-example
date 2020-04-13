@@ -19,7 +19,8 @@ export class Node implements d3.SimulationNodeDatum {
   fontSize: string = '20px';
   //tagy: number;
   color: string = '#ccc';
-  flagged: number = 0;
+  flagged: number = 0; // default flag image height and width
+  flagged2: number = -10; // x & y
 
 
   constructor(id) {

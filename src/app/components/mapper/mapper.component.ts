@@ -75,7 +75,8 @@ export class MapperComponent implements OnInit {
     this.links.push(new Link(3, 11));
     this.nodes[getIndex(3)].name = "used cars";
     this.nodes[getIndex(3)].color = "#6542a4";
-    this.nodes[getIndex(3)].flagged = 20; // height&width of flag
+    this.nodes[getIndex(3)].flagged = 10; // height&width of flag
+    this.nodes[getIndex(3)].flagged2 = -5; // x&y offset of flag
 
     this.nodes[getIndex(4)].linkCount=2;
     this.links.push(new Link(4, 12));
