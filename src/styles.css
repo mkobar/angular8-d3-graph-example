@@ -206,7 +206,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
     /* flex: none;*/
     overflow: scroll;
     position: fixed;
-    transform: scale(1.35,1.35)
+    transform: scale(1.35,1.35);
+    height: 600px;
 }
 
 .Query2 {
